@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom";
-import "../css/Navbar.css"
+import { Link } from "react-router-dom"; // imports navigation links
+import "../css/Navbar.css" // the stylesheet for the navbar
 
-function NavBar() {
-    return (
-        <nav className="navbar">
-            <div className="navbar-brand">
-                <Link to="/">Movie App</Link>
+function NavBar() { // navbar function
+    return ( // HTML navbar component
+        <nav className="navbar"> {/* nav element */}
+            <div className="navbar-brand"> {/* div for left side title */}
+                <Link to="/">Movie App</Link> {/* hyperlink to default page */}
             </div>
-            <div className="navbar-links">
-                <Link to="/" className="nav-link">Home</Link>
-                <Link to="/favourites" className="nav-link">Favourites</Link>
+            <div className="navbar-links"> {/* div for right side links */}
+                <Link to="/" className="nav-link">Home</Link> {/* hyperlink to home page */}
+                <Link to="/favourites" className="nav-link">Favourites</Link> {/* hyperlink to favourites page */}
             </div>
         </nav>
     )
 }
 
-export default NavBar
+export default NavBar // default export for NavBar
